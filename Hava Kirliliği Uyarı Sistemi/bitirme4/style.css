@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+
+    background-image:linear-gradient(to left bottom, rgba(230,255,230,0.3),rgba(230,255,230,0.3)),
+                     url(img/bg4.jpg);
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+
+}
+
+.container{
+    width: 110rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+/*header*/
+
+header{
+    background-color:  whitesmoke;
+    height: 4rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 4rem;
+}
+
+ul{
+    font-family: 'Lobster', cursive;
+    list-style-type: none;
+    float: right;
+}
+
+li{
+    display: inline-block;
+    font-size: 2rem;
+    margin-top: 5px;
+    margin-right: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: crimson;
+}
+
+.logo{
+    margin-left: 3rem;
+    padding: 1rem;
+    font-size: 3.5rem;
+}
+
+/*Astim Text*/
+
+#astim-bilgi{
+    background-image:linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)),
+                    url(img/astim.jpg);
+
+    border-radius: 50px;
+    background-size: cover;
+    padding: 5rem;
+    height: 75vh;
+    margin-bottom: 5rem;
+}
+
+.astim-baslik{
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'M PLUS 1 Code', sans-serif;
+    font-size: 7rem;
+}
+
+.astim-text{
+    font-size: 2rem;
+    font-family: 'M PLUS 1 Code', sans-serif;
+}
+
+.astim-yanbaslik{
+    margin: 2rem 0;
+    font-size: 4rem;
+    font-family: 'M PLUS 1 Code', sans-serif;
+}
+
+/*HARİTA*/
+
+#map-bilgi{
+    border-radius: 50px;
+    width: 100%;
+    height: 80vh;
+    background-color: whitesmoke;
+    margin-bottom: 5rem;
+}
+
+.map-baslik{
+    padding-top: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'M PLUS 1 Code', sans-serif;
+    font-size: 5rem;
+}
+
+#map{
+    margin-left: 10rem;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+    width: 80%;
+    height: 60%;
+}
+
+.map-text{
+    margin-left: 10rem;
+    font-size: 2rem;
+    font-family: 'M PLUS 1 Code', sans-serif;
+}
+
+.kirmizi{
+    color: tomato;
+    margin-bottom: 5px;
+}
+
+.turuncu{
+    color: orange;
+    margin-bottom: 5px;
+}
+
+.yesil{
+    color: green;
+}
+
+/*ABONE*/
+
+#abone{
+    border-radius: 50px;
+    width: 100%;
+    height: 60vh;
+    background-color: whitesmoke;
+    margin-bottom: 5rem;
+}
+
+.abone-baslik{
+    padding-top: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'M PLUS 1 Code', sans-serif;
+    font-size: 5rem;
+}
+
+.form-group{
+    margin-left: 8rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: crimson;
+    font-family: 'M PLUS 1 Code', sans-serif;
+}
+
+.girdi{
+    width: 70%;
+    padding: 1rem;
+    border: 1px solid thistle;
+}
+
+#isim{
+    margin-left:7.6rem;
+}
+
+#sehir{
+    margin-left: 10.2rem;
+}
+
+#mail-input{
+    margin-left: 8.5rem;
+}
+
+.btn{
+    margin-left: 25.5rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: 'M PLUS 1 Code', sans-serif;
+    background-color: whitesmoke;
+    border: 1px solid darkorchid;
+    color: darkorchid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: darkorchid;
+    color: whitesmoke;
+    
+}
+
+.mesaj{
+    font-size: 10px;
+    margin-left: 8rem;
+}
+
+/*footer*/
+
+footer{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Lobster', cursive;
+    margin-bottom: 1rem;
+}
+
+/*responsive*/
+
+@media (max-width: 1150px){
+
+    html{
+        font-size: 8px;
+    }
+
+}
+
+@media (max-width: 950px){
+
+    html{
+        font-size: 6.5px;
+    }
+
+}
+
+@media (max-width: 750px){
+
+    html{
+        font-size: 4.5px;
+    }
+
+    .header{
+        height: 6rem;
+    }
+
+    li{
+        font-size: 4rem;
+    }
+    
+    .logo{
+        font-size: 5rem;
+    }
+
+    #astim-bilgi{
+        height: 55vh;
+    }
+
+    .astim-text{
+        font-size: 3rem;
+    }
+
+    #map-bilgi{
+        height: 50vh;
+    }
+
+    .map-text{
+        font-size: 3rem;
+    }
+
+    #abone{
+        height: 40vh;
+    }
+
+    .form-group{
+        font-size: 3rem;
+    }
+
+    #isim{
+        margin-left:11.4rem;
+    }
+    
+    #sehir{
+        margin-left: 15.3rem;
+    }
+
+    #mail-input{
+        margin-left: 12.8rem;
+    }
+
+    .btn{
+        margin-left: 34rem;
+        font-size: 3rem;
+    }
+
+}
+
+
+
