@@ -1,0 +1,143 @@
+
+*{
+    /*sayfanın ölçeğinin sabit kalmasını sağlıyor*/
+    box-sizing: border-box;
+}
+
+
+body{
+    /*ilki kullanacağımız font margin ise sayfanın çevredeki boşluğunu ayarlıyor.*/
+    font-family: 'Glory', sans-serif;
+    margin: 0;
+}
+/*menü etiketinin özel ayarlarını yapıyoruz. ilki yükseklik boyutunu ayarlıyor.*/
+#menu{
+    height: 80px;
+    /*menü etiketine iç boşluk vermeyi sağlar.Menüye sağdan ve soldan 20px boşluk verdik.*/
+    padding: 0 20px;
+}
+
+#logo{
+    font-size: 30px;
+    /*logonun satır yüksekliği*/
+    line-height: 80px;
+    color: indigo;
+    float: left;
+}
+/*logoyu sola linkleri ise sağa hizalamış olduk float ile*/
+nav{
+    float: right;
+    line-height: 80px;
+}
+
+/*direk linklere müdahale ettiğimiz kısım*/
+nav a:link{
+    /*linklerin altındaki çizgiyi kaldırdık.*/
+    text-decoration: none;
+    margin-right: 25px;
+    color: mediumblue;
+}
+
+/*linklerin üzerine geldiğimizde olacaklar*/
+nav a:hover{
+    /*üzerine geldiğimzide linlerin altında çizgi attık.*/
+    border-bottom: 2px solid;
+}
+
+nav a:visited{
+    text-decoration: none;
+    margin-right: 25px;
+    color: mediumblue;
+}
+
+/*direk ikonlara müdahale için ikon sınıfı eklemiştik.Şimdi onu kullanıyoruz.*/
+.ikon{
+    margin-right: 7px;
+    font-size: 16px;
+}
+
+/*anasayfada resim olmasını sağladık. cover resmi sığdıran komut.*/
+#anasayfa{
+    height: 600px;
+    background-image: url("../img/r4.jpg");
+    background-size: cover;
+    background-position: center;
+    /*Burada resmin sabit kalmasını sağladık.*/
+    background-attachment: fixed;
+}
+
+/*resmin üzerinde yazacak açklamalar için eklenen etiket.*/
+#black{
+    height: 600px;
+    background-color: black;
+    opacity: .5;
+}
+
+#icerik{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    color: white;
+    font-size: 20px;
+}
+
+#egitimler{
+    background-color: whitesmoke;
+    padding: 50px;
+    text-align: center;
+    height: 700px;
+}
+
+.container{
+    width: 1400px;
+    height: auto;
+    margin: auto;
+}
+
+.karth3{
+    font-size: 30px;
+    color: #003666;
+}
+
+.kart{
+    width: 400px;
+    height: 450px;
+    border: 1px solid #ddd;
+    padding: 0;
+    /*kartların yan yana dizilmesini sağlayan komut*/
+    display: inline-block;
+}
+
+.kart:hover{
+    border: 2px solid black;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+    max-height: 50%;
+}
+
+.karth5{
+    font-size: 15px;
+    color: #003666;
+
+}
+
+.kartp{
+    color: #8888;
+}
+
+.buton{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 8px 16px;
+
+}
+
+
+
+
